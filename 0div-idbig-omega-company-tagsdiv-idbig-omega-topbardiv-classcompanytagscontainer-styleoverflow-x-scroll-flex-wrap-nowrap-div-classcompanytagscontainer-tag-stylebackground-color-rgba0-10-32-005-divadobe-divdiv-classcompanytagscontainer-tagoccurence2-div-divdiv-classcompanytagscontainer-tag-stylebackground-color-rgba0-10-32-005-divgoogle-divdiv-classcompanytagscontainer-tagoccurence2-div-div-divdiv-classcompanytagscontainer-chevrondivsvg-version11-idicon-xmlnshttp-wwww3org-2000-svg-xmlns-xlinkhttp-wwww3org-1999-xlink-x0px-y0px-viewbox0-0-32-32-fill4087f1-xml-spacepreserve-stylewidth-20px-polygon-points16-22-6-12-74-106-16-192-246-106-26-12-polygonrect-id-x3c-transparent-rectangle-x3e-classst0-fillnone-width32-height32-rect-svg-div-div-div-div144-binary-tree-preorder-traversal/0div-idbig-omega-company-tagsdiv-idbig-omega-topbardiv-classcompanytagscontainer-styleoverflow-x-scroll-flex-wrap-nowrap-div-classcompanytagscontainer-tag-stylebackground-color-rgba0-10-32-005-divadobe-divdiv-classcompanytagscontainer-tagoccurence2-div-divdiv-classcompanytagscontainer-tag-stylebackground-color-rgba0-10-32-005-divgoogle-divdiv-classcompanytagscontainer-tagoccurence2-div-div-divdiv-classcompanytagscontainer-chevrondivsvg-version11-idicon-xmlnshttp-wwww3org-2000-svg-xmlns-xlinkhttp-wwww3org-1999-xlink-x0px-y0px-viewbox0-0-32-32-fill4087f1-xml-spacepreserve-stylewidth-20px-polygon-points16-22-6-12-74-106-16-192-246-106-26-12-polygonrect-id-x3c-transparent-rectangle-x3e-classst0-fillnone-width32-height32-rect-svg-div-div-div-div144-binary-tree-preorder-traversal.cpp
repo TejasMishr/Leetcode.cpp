@@ -9,6 +9,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+
+//ROOT LEFT RIGHT
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
@@ -20,8 +23,10 @@ public:
             root=st.top();
             st.pop();
             ans.push_back(root->val);
+            
             if(root->right!=NULL) st.push(root->right);
             if(root->left!=NULL) st.push(root->left);
+            
             
         }
         return ans;
