@@ -11,6 +11,8 @@
  */
 class Solution {
 public:
+    
+    // TIME COMPLEXITY O(n)  SPACE COMPLEXITY( O(N)) // SKEW TREE
     bool isBalanced(TreeNode* root) {
         return dfsheight(root)!= -1;
     }
